@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tennis Shop</title>
+    <meta name="Borna Milkovic" content="Shop" />
+    <link rel="stylesheet" href="/styles/stil.css" />
+    <script type="module" src="/scripts/main.js"></script>
+  </head>
+
+  <bod>
+    <div class="header">
+        <%- include('partials/header'); %>
+    </div>
+    <main>
+      <div class="left">
+        <div class="selekcija">
+          <% for (let i = 0; i < 10; i++) { %>
+              <a href="#" id="<%= i + 1 %>"><%= kategorije.data.categories[i].name %></a>
+          <% } %>
+      </div>
+
+        <div class="wrapper-info">
+          <div class="info-dio">
+            <img src="/images/contact.jpg" alt="kontakt" />
+            <a href="#">kontakt</a>
+          </div>
+          <div class="info-dio">
+            <img src="/images/plane.jpg" alt="newsletter" />
+            <a href="#">newsletter</a>
+          </div>
+          <div class="info-dio">
+            <img src="/images/pretplata.jpg" alt="pretplata" />
+            <a href="#">pretplata</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper-pozdrav">
+        <img class="tennis-shop" src="/images/poz.jpg" />
+        <h2 class="p-tekst">Dobrodošli u trgovinu teniske opreme!</h2>
+      </div>
+
+      <div class="proizvodi">
+        <div class="item">
+          <img class="slika" id="s1" src="<%= products[0].image %>" />
+          <button class="add" id="b1">
+            <img class="ho" src="/images/cart-plus.jpg" />
+          </button>
+          <p class="name" id="t1"><%= products[0].name %></p>
+          <p class="category" id="c11"><%= name %></p>
+
+          <div class="number1" id="n11"><p id="n1">88</p></div>
+        </div>
+        <div class="item">
+          <img class="slika" id="s2" src="<%= products[1].image %>" />
+          <button class="add" id="b2">
+            <img class="ho" src="/images/cart-plus.jpg" />
+          </button>
+          <p class="name" id="t2"><%= products[1].name %></p>
+          <p class="category" id="c12"><%= name %></p>
+          <div class="number1" id="n12"><p id="n2">88</p></div>
+        </div>
+        <div class="item">
+          <img class="slika" id="s3" src="<%= products[2].image %>" />
+          <button class="add" id="b3">
+            <img class="ho" src="/images/cart-plus.jpg" />
+          </button>
+          <p class="name" id="t3"><%= products[2].name %></p>
+          <p class="category" id="c13"><%= name %></p>
+          <div class="number1" id="n13"><p id="n3">88</p></div>
+        </div>
+        <div class="item">
+          <img class="slika" id="s4" src="<%= products[3].image %>" />
+          <button class="add" id="b4">
+            <img class="ho" src="/images/cart-plus.jpg" />
+          </button>
+          <p class="name" id="t4"><%= products[3].name %></p>
+          <p class="category" id="c14"><%= name %></p>
+          <div class="number1" id="n14"><p id="n4">88</p></div>
+        </div>
+        <div class="item">
+          <img class="slika" id="s5" src="<%= products[4].image %>" />
+          <button class="add" id="b5">
+            <img class="ho" src="/images/cart-plus.jpg" />
+          </button>
+          <p class="name" id="t5"><%= products[4].name %></p>
+          <p class="category" id="c15"><%= name %></p>
+          <div class="number1" id="n15"><p id="n5">88</p></div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <footer class="fd">
+    <%- include('partials/footer'); %>
+  </footer>
+</html>

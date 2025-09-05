@@ -1,0 +1,336 @@
+body {
+  font-size: 2rem;
+  margin-left: 2%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+  background-color: rgb(242, 247, 226);
+}
+.header {
+  display: flex;
+  flex-direction: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  height: 10%;
+
+  border-bottom: 3px solid black;
+  background-color: rgb(242, 247, 226);
+}
+.logo {
+  min-width: 6em;
+  max-width: 10%;
+  width: 12%;
+  height: 90%;
+  padding: 1% 0%;
+  border-radius: 20%;
+}
+.wraper-kategorija {
+  width: 50%;
+  font-size: 1em;
+}
+.cart-section {
+  height: 100%;
+  width: 15%;
+  padding: 0%;
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: space-between;
+  position: relative;
+}
+.search {
+  width: 90%;
+  min-width: 2em;
+}
+.kosarica {
+  width: 90%;
+  min-width: 2em;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.wrapper-info {
+  margin-left: 1%;
+  margin-top: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border: 2px solid black;
+  padding: 15% 0% 10% 15%;
+  border-radius: 10%;
+
+  background-color: rgb(255, 255, 255);
+}
+.info-dio {
+  width: 10%;
+  display: flex;
+  font-size: 0.7em;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 0.5em;
+}
+.proizvodi {
+  margin-left: auto;
+  width: 70%;
+  margin-right: 2%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.item {
+  border: 3px solid black;
+  text-align: center;
+  margin: 2rem;
+  position: relative;
+  background-color: rgba(128, 220, 235, 0.513);
+  border-radius: 2%;
+}
+.slika {
+  min-width: 100px;
+  height: 270px;
+  max-width: 300px;
+}
+.cart-wrapped {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(199, 249, 249);
+
+  padding: 2% 15%;
+  margin: 2%;
+}
+
+.zagljavlje {
+  display: flex;
+  padding: 0% 15%;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+.list {
+  padding: 0% 15% 0% 15%;
+  display: flex;
+  flex-direction: row wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  border: 1px solid black;
+  text-align: center;
+}
+.dio {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.slika {
+  background-color: white;
+}
+div.number {
+  position: absolute;
+  bottom: 0em;
+  font-size: 80%;
+  width: 25%;
+  height: 50%;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.number1 {
+  width: 2.5em;
+  height: 2.5em;
+  position: absolute;
+  bottom: 5em;
+  right: -0.3em;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#n {
+  font-size: 1em;
+  text-align: center;
+}
+.krug {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 5rem;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  font-size: 2rem;
+}
+.gumb {
+  border-radius: 2em;
+  text-align: center;
+  font-size: 0.7em;
+}
+.footer {
+  margin-top: 5%;
+  text-align: right;
+}
+/*
+.slika:hover + .add{
+    display: block;
+}
+*/
+.add img {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.add {
+  position: absolute;
+  top: 37%;
+  left: 25%;
+  width: 50%;
+  background: none;
+  border: none;
+  display: none;
+  pointer-events: none;
+}
+
+.left {
+  font-size: 90%;
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  margin-top: 5%;
+  margin-left: 4%;
+  float: left;
+}
+
+.selekcija {
+  display: flex;
+  flex-flow: column;
+  border: 2px solid black;
+  height: max-content;
+  width: 100%;
+  gap: 1em;
+  padding: 30% 0% 30% 20%;
+  background-color: rgba(128, 220, 235, 0.513);
+  border-radius: 2%;
+}
+.selekcija a {
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+.wrapper-pozdrav {
+  position: relative;
+  height: 90%;
+  width: 60%;
+  margin: 3% 10%;
+  float: right;
+}
+.tennis-shop {
+  object-fit: cover;
+  width: 100%;
+  height: 500px;
+  border-radius: 7%;
+  border: 3px solid black;
+}
+.p-tekst {
+  position: absolute;
+  font-size: 100%;
+  background-color: rgba(233, 241, 190, 0.76);
+  width: 30%;
+  top: 5%;
+  right: 6%;
+  padding: 1%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  .cart-wrapped {
+    padding: 2% 10%;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .logo {
+    order: 1;
+    width: 20%;
+    margin-right: 20%;
+  }
+  .cart-section {
+    order: 3;
+    width: 25%;
+  }
+
+  .wraper-kategorija {
+    order: 2;
+    width: 70%;
+  }
+
+  main {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .wrapper-pozdrav {
+    width: 90%;
+    font-size: 0.9em;
+  }
+  .left {
+    order: 2;
+    width: 20%;
+    margin-left: 2%;
+    font-size: 0.7em;
+  }
+  .proizvodi {
+    right: 0%;
+    top: 41%;
+    order: 3;
+    width: 70%;
+  }
+  .tennis-shop {
+    object-fit: fill;
+  }
+  .slika {
+    height: 200px;
+  }
+  .fd{
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+    font-size: 0.5rem;
+  }
+  .ime-kategorija{
+    font-size: 3rem;
+  }
+  .zagljavlje{
+    font-size: 1rem;
+  }
+  .list{
+    font-size: 1rem;
+  }
+  .krug{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 2rem;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+.fd{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: relative;
+  bottom: 0px;
+  font-size: 1rem;
+}

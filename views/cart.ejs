@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="/styles/stil.css" />
+    <script type="module" src="/scripts/kart.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <%- include('partials/header'); %>
+    </div>
+
+    <div class="cart-wrapped">
+      <div class="zagljavlje">
+        <h4>Naziv Proizvoda</h4>
+        <h4 id="koli">Količina</h4>
+      </div>
+
+      <div class="footer">
+        <a href="/home"><button class="gumb">Nastavi kupnju</button></a>
+        <button class="gumb" id="re">Završi kupnju</button>
+      </div>
+    </div>
+
+  </body>
+  <footer>
+    <%- include('partials/footer'); %>
+  </footer>
+</html>
